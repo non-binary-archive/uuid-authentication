@@ -15,6 +15,7 @@
 		CB296613257808720047493F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB296612257808720047493F /* WelcomeViewController.swift */; };
 		CB2966162578087A0047493F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2966152578087A0047493F /* HomeView.swift */; };
 		CB29661A25780F3B0047493F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29661925780F3B0047493F /* User.swift */; };
+		CB966D5B2578128900CAF324 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB966D5A2578128900CAF324 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		CB296612257808720047493F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CB2966152578087A0047493F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CB29661925780F3B0047493F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB966D5A2578128900CAF324 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				CB296612257808720047493F /* WelcomeViewController.swift */,
 				CB2966152578087A0047493F /* HomeView.swift */,
 				CB29661925780F3B0047493F /* User.swift */,
+				CB966D5A2578128900CAF324 /* AuthenticationService.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				CB296613257808720047493F /* WelcomeViewController.swift in Sources */,
 				CB2965F8257801640047493F /* AppDelegate.swift in Sources */,
 				CB2965FA257801640047493F /* SceneDelegate.swift in Sources */,
+				CB966D5B2578128900CAF324 /* AuthenticationService.swift in Sources */,
 				CB29661A25780F3B0047493F /* User.swift in Sources */,
 				CB2966162578087A0047493F /* HomeView.swift in Sources */,
 			);

@@ -37,7 +37,7 @@ final class WelcomeViewController: UIViewController {
         let deviceIdLabel = UILabel(frame: .zero)
         deviceIdLabel.translatesAutoresizingMaskIntoConstraints = false
         deviceIdLabel.font = UIFont.boldSystemFont(ofSize: UIFont.preferredFont(forTextStyle: .body).pointSize)
-        deviceIdLabel.text = getDeviceId()
+        deviceIdLabel.text = AuthenticationService.getDeviceId()
         
         let copyDeviceIdButton = UIButton(type: .system)
         copyDeviceIdButton.translatesAutoresizingMaskIntoConstraints = false
@@ -68,14 +68,6 @@ final class WelcomeViewController: UIViewController {
     
     // MARK: Actions
     @objc private func handleCopyDeviceIdButtonPressed(sender: UIButton) {
-        UIPasteboard.general.string = getDeviceId()
-    }
-    
-    private func getDeviceId() -> String {
-        guard let identifier = UIDevice.current.identifierForVendor else {
-            return "Something went wrong"
-        }
-        
-        return identifier.uuidString
+        UIPasteboard.general.string = AuthenticationService.getDeviceId()
     }
 }

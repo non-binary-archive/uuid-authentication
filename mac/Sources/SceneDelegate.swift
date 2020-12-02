@@ -20,8 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = WelcomeViewController()
-        self.window = window
-        window.makeKeyAndVisible()
+        
+        AuthenticationService.validateId(id: AuthenticationService.getDeviceId()) { (user) in
+            if let user = user {
+                window.rootViewController = UIHostingController(rootView: HomeView(user: user))
+            } else {
+                window.rootViewController = WelcomeViewController()
+            }
+            
+            self.window = window
+            window.makeKeyAndVisible()
+        }
     }
 }
